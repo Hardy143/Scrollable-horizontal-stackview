@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupViews()
         setupLayout()
-        addToStackView(total: 50)
+        addToStackView(total: 50) // Number of stackview components
     }
         
     private func setupViews() {
@@ -48,7 +48,6 @@ class ViewController: UIViewController {
         stackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
         stackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
         stackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
-        //stackView.widthAnchor.constraint(equalToConstant: 1000).isActive = true
 
         stackView.heightAnchor.constraint(equalTo: scrollView.heightAnchor).isActive = true
         stackView.widthAnchor.constraint(greaterThanOrEqualTo: scrollView.widthAnchor).isActive = true
